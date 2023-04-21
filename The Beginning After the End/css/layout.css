@@ -1,0 +1,74 @@
+
+/* reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header styles */
+header {
+    height: 153px;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    margin-bottom: 1%;
+    font-family: "Nova Oval", cursive;
+}
+
+/* main styles */
+main {
+    padding: 3px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* h2 styles */
+h2 {
+    font-size: 1.6em;
+    margin: 20px;
+    text-align: center;
+    font-family: "Acme", sans-serif;
+}
+
+/* footer styles */
+footer {
+    height: 70px;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5%;
+    font-family: "Acme", sans-serif;
+}
+
+
+/* Reponsice Layout */
+@media (max-width: 767px) {
+
+    /* navigation menu styles */
+    .chapter-navigation {
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+  
+    /* navigation buttons */
+    .chapter-navigation button {
+      padding: 8px 12px;
+      font-size: 1.2em;
+    }
+  
+    /* dropdown styles */
+    .dropdown-content {
+      min-width: 100px;
+    }
+  
+}
