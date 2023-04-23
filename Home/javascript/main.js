@@ -1,3 +1,5 @@
+/* ====== Back to Top Function ====== */
+
 // Define a function to check if the page is scrolled and show/hide the back-to-top button accordingly
 function scrollFunction() {
     if (window.pageYOffset > 0) {
@@ -23,3 +25,28 @@ function topFunction() {
 
 // Attach the topFunction() function to the click event of the back-to-top button
 document.getElementById("btnTop").addEventListener("click", topFunction);
+
+/* ====== Dropdown ====== */
+
+// Get the dropdown button and content
+var dropdownBtn = document.querySelector(".dropbtn");
+var dropdownContent = document.querySelector(".dropdown-content");
+
+// Add click event listener to the dropdown button
+dropdownBtn.addEventListener("click", function () {
+    // Toggle the dropdown content
+    dropdownContent.classList.toggle("show");
+});
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener("click", function (event) {
+    if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.querySelectorAll(".dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
+            }
+        }
+    }
+});

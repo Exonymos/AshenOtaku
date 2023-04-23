@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Home/graphics/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="Home/graphics/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AshenOtaku</title>
     <link rel="stylesheet" href="Home/css/main.css">
     <link rel="stylesheet" href="Home/css/imports.css">
+    <script src="Home/javascript/includes.js"></script>
 </head>
 
 <body>
 
+    <!-- <div w3-include-html="Home/includes/header.html"></div> -->
+
     <header>
-        <div class="header-content">
+        <div class="header-content text-disable">
             <h1 class="logo">AshenOtaku</h1>
             <nav class="main-navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Manga</a></li>
                     <li><a href="#">Manhwa</a></li>
-                    <li><a href="#">Comic Strips</a></li>
                 </ul>
             </nav>
 
@@ -30,9 +30,6 @@
     </header>
 
     <div class="main-container">
-        <div class="sidebar">
-            <!-- Sidebar content goes here -->
-        </div>
 
         <div class="content-container">
             <div class="comic-container">
@@ -46,7 +43,7 @@
                 </a>
 
                 <a href="#">
-                    <div class="comic-item" style="background-image: url('Home/images/solo-leveling.jpg');">
+                    <div class="comic-item manhwa" style="background-image: url('Home/images/solo-leveling.jpg');">
                         <div class="comic-info-container">
                             <h2 class="comic-title">Solo Leveling</h2>
                         </div>
@@ -54,7 +51,8 @@
                 </a>
 
                 <a href="#">
-                    <div class="comic-item" style="background-image: url('Home/images/solo-leveling.jpg');">
+                    <div class="comic-item manhwa"
+                        style="background-image: url('Home/images/the-great-mage-returns-after-4000-years.jpg');">
                         <div class="comic-info-container">
                             <h2 class="comic-title">The Great Mage Returns Afre 4000 Years</h2>
                         </div>
@@ -62,17 +60,9 @@
                 </a>
 
                 <a href="#">
-                    <div class="comic-item" style="background-image: url('Home/images/solo-leveling.jpg');">
+                    <div class="comic-item manhwa" style="background-image: url('Home/images/second-life-ranker.jpg');">
                         <div class="comic-info-container">
                             <h2 class="comic-title">Second Life Ranker</h2>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="comic-item" style="background-image: url('Home/images/solo-leveling.jpg');">
-                        <div class="comic-info-container">
-                            <h2 class="comic-title">Exonymos</h2>
                         </div>
                     </div>
                 </a>
@@ -82,6 +72,9 @@
             </div>
         </div>
     </div>
+
+    <!-- <div w3-include-html="Home/includes/footer.html"></div> -->
+
     <img src="Home/graphics/btt.png" id="btnTop" onclick="topFunction()">
     <footer>
         <div>
@@ -90,12 +83,14 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Manga</a></li>
                     <li><a href="#">Manhwa</a></li>
-                    <li><a href="#">Comic Strips</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
-<script src="Home/javascript/main.js"></script>
+
+    <script src="Home/javascript/main.js"></script>
+    <!-- <script>includeHTML();</script> -->
+
 </body>
 
 </html>
