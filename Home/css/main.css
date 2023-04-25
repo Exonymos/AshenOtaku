@@ -3,7 +3,6 @@ html {
 }
 
 /* Scroll Bar Styles */
-/* Set the width and height of the scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
     height: 100%;
@@ -17,11 +16,14 @@ html {
 /* Customize the thumb of the scroll bar */
 ::-webkit-scrollbar-thumb {
     background-color: #ce3700;
+    border-radius: 45%;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Customize the corner of the scroll bar */
 ::-webkit-scrollbar-corner {
     background-color: #f5f5f5;
+    border-top: 5px solid #ce3700;
 }
 
 /* Body styles */
@@ -40,6 +42,17 @@ header {
     border: 1px solid #ff4500;
     padding: 20px;
     margin-bottom: 5%;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+header a {
+    margin: 0;
+    padding: 0;
 }
 
 /* Header content styles */
@@ -129,7 +142,7 @@ header {
     display: grid;
     justify-content: start;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-column-gap: 10px; /* add this line */
+    grid-column-gap: 10px;
     margin: 10px;
 }
 
@@ -199,14 +212,14 @@ footer {
     position: relative;
     bottom: 10px;
     border: 1px solid #ff4500;
-    margin-top: 15%;
+    margin-top: 10%;
     box-sizing: border-box;
     width: 100%;
 }
 
 footer a {
-    color: #fff;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 footer a:hover {
@@ -251,4 +264,98 @@ footer a:hover {
 
 .text-disable {
     user-select: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 900px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    header img {
+        display: block;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    .comic-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .comic-item {
+        width: 150px;
+        height: 200px;
+    }
+
+    .comic-title {
+        font-size: 16px;
+    }
+
+    .main-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cover-image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-container {
+        line-height: 25px;
+    }
+
+    .info-container h2 {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    .info-container p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .comic-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .comic-item {
+        width: 100px;
+        height: 150px;
+    }
+
+    .comic-title {
+        font-size: 14px;
+    }
+
+    .main-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cover-image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-container {
+        line-height: 20px;
+    }
+
+    .info-container h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .info-container p {
+        font-size: 1em;
+    }
 }
