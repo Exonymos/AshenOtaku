@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solo Leveling</title>
+    <link rel="stylesheet" href="../Home/css/main.css">
+    <link rel="stylesheet" href="../Home/css/imports.css">
+    <link rel="stylesheet" href="../Home/css/chapters.css">
+    <script src="../Home/javascript/includes.js"></script>
+    <script src="../Home/javascript/chapterload.js"></script>
+    <link rel="shortcut icon" href="../Home/graphics/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div w3-include-html="../Home/includes/header.html"></div>
+    <div class="main-container">
+
+        <div class="content-container">
+
+            <div class="main-info-container">
+                <div class="cover-image-container"
+                    style="background-image: url('../Home/images/solo-leveling.jpg');"></div>
+                <div class="info-container">
+                    <h2>Solo Leveling</h2>
+                    <p>Author: Chugong</p>
+                    <p>Genre: Action, fantasy</p>
+                    <p>Original Run: March 4, 2018 – Present</p>
+                    <p>Publisher: D&C Media</p>
+                    <p>Status: Ongoing</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-container text-disable">
+
+            <!-- Dropdown menu on the left -->
+            <div class="drop-container">
+                <div class="sec-center">
+                    <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                    <label class="for-dropdown" for="dropdown">Go To Chapter<i class="uil uil-arrow-down"></i></label>
+                    <div class="section-dropdown">
+                        <a href="#chapter1">Chapter 1<i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sort button on the right -->
+            <div class="sort-button" id="sort-button">
+                <svg width="800" height="800" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.293 7.707a1 1 0 0 1 0-1.414l3-3a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0Z"
+                        fill="#ff4500" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.707 7.707a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414Z"
+                        fill="#ff4500" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14 5a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V6a1 1 0 0 1 1-1Zm-4.293 7.293a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 0Z"
+                        fill="#ff4500" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.293 12.293a1 1 0 0 1 1.414 0l3 3a1 1 0 1 1-1.414 1.414l-3-3a1 1 0 0 1 0-1.414Z"
+                        fill="#ff4500" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 15a1 1 0 0 1-1-1V6a1 1 0 1 1 2 0v8a1 1 0 0 1-1 1Z" fill="#ff4500" />
+                </svg>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container text-disable">
+
+        <div class="chapters" id="chapters">
+
+            <div class="chapter" id="chapter1">
+                <p>Chapter 1</p>
+            
+            </div>
+
+        </div>
+
+    </div>
+    <img class="text-disable" src="../Home/graphics/btt.png" id="btnTop" onclick="topFunction()"
+        oncontextmenu="return false">
+
+    <div w3-include-html="../Home/includes/footer.html"></div>
+
+    <script src="../Home/javascript/main.js"></script>
+    <script src="../Home/javascript/chaptersort.js"></script>
+    <script>includeHTML();</script>
+</body>
+
+</html>
